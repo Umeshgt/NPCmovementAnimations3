@@ -29,7 +29,7 @@ class Enemy{
     }
     update(){
         this.x =  canvas.width/2 */*is the amplitude of wave from fixed x*/  Math.sin(this.angle * Math.PI/90) /*is the angle verticle change*/  + (canvas.width/2 - this.width/2) //takes the fixed x in the middle of the canvas
-        this.y = canvas.height/2 * Math.cos(this.angle * Math.PI/180) + (canvas.height/2 - this.width/2)
+        this.y = canvas.height/2 * Math.cos(this.angle * Math.PI/360) + (canvas.height/2 - this.width/2)
         
         this.angle += this.angleSpeed
         
