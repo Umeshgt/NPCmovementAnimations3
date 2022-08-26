@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d")
 const CANVAS_WIDTH = canvas.width = 500
 const CANVAS_HEIGHT = canvas.height = 1000
 let gameFrame = 0
-const numberOfEnemies = 100
+const numberOfEnemies = 50
 const enemyArray = []
 
 
@@ -28,8 +28,8 @@ class Enemy{
         this.angleSpeed = Math.random() * 0.5 + 0.5
     }
     update(){
-        this.x =  canvas.width/2 */*is the amplitude of wave from fixed x*/  Math.sin(this.angle * Math.PI/90) /*is the angle verticle change*/  + (canvas.width/2 - this.width/2) //takes the fixed x in the middle of the canvas
-        this.y = canvas.height/2 * Math.cos(this.angle * Math.PI/360) + (canvas.height/2 - this.width/2)
+        this.x =  canvas.width/2 */*is the amplitude of wave from fixed x*/  Math.sin(this.angle * Math.PI/110) /*is the angle verticle change*/  + (canvas.width/2 - this.width/2) //takes the fixed x in the middle of the canvas
+        this.y = canvas.height/2 * Math.cos(this.angle * Math.PI/150) + (canvas.height/2 - this.width/2)
         
         this.angle += this.angleSpeed
         
